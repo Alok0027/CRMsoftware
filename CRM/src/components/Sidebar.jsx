@@ -13,7 +13,8 @@ import {
   FiLogOut,
   FiMail,
   FiCheckCircle,
-  FiAlertTriangle
+  FiAlertTriangle,
+  FiExternalLink
 } from 'react-icons/fi';
 
 const navItems = [
@@ -23,7 +24,8 @@ const navItems = [
   { name: 'Contacts', icon: <FiPhone />, path: '/dashboard/contacts' },
   { name: 'Tasks', icon: <FiCalendar />, path: '/dashboard/tasks' },
   { name: 'Reports', icon: <FiBarChart2 />, path: '/dashboard/reports' },
-  { name: 'Settings', icon: <FiSettings />, path: '/dashboard/settings' }
+  { name: 'Settings', icon: <FiSettings />, path: '/dashboard/settings' },
+  { name: 'Sample', icon: <FiExternalLink />, path: 'http://localhost:5174/', external: true }
 ];
 
 const pseudoNotifications = [
@@ -72,20 +74,38 @@ const Sidebar = () => {
 
       {}
       <nav className="flex flex-col gap-2 px-4 py-6">
-        {navItems.map((item) => (
-          <Link
-            key={item.name}
-            to={item.path}
-            className={`flex items-center gap-3 px-4 py-2 rounded-md font-medium transition-all duration-300 ${
-              location.pathname === item.path
-                ? 'bg-orange-500 text-white shadow'
-                : 'text-gray-300 hover:bg-orange-400/20 hover:text-white'
-            }`}
-          >
-            <span className="text-xl">{item.icon}</span>
-            {item.name}
-          </Link>
-        ))}
+        {navItems.map((item) => {
+          const commonClasses = "flex items-center gap-3 px-4 py-2 rounded-md font-medium transition-all duration-300";
+          const activeClasses = "bg-orange-500 text-white shadow";
+          const inactiveClasses = "text-gray-300 hover:bg-orange-400/20 hover:text-white";
+
+          if (item.external) {
+            return (
+              <a
+                key={item.name}
+                href={item.path}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${commonClasses} ${inactiveClasses}`}
+              >
+                <span className="text-xl">{item.icon}</span>
+                {item.name}
+              </a>
+            );
+          }
+          return (
+            <Link
+              key={item.name}
+              to={item.path}
+              className={`${commonClasses} ${
+                location.pathname === item.path ? activeClasses : inactiveClasses
+              }`}
+            >
+              <span className="text-xl">{item.icon}</span>
+              {item.name}
+            </Link>
+          );
+        })}
       </nav>
 
       {}
@@ -120,10 +140,10 @@ const Sidebar = () => {
 
       {}
       <div className="mt-auto px-4 py-6 border-t border-white/10">
-        <button className="flex items-center gap-3 text-red-400 hover:text-red-500 transition-all duration-300 w-full px-4 py-2 rounded-md hover:bg-red-500/10">
+        <Link to="/" className="flex items-center gap-3 text-red-400 hover:text-red-500 transition-all duration-300 w-full px-4 py-2 rounded-md hover:bg-red-500/10">
           <FiLogOut className="text-xl" />
           Logout
-        </button>
+        </Link>
       </div>
     </aside>
   );
