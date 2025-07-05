@@ -49,9 +49,16 @@ const Benefit = () => {
 
   return (
     <>
-      {/* Animated Text Hero Section */}
-      <section className="w-full min-h-screen text-black flex flex-col md:flex-row items-center justify-between px-8 md:px-16 py-16 gap-y-12 md:gap-x-20">
-        {/* Left side - Screenshot */}
+      
+            <div className="text-center pt-20 pb-8">
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
+          Why Team loves our <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600">CRM</span>
+        </h2>
+      </div>
+
+      
+                  <section className="w-full text-black flex flex-col md:flex-row items-center justify-between px-8 md:px-16 pt-8 pb-16 gap-y-12 md:gap-x-20">
+        
         <div className="w-full md:w-[75%] lg:w-[80%] flex justify-center mb-12 md:mb-0">
           <img
             src={crmpic1}
@@ -60,9 +67,9 @@ const Benefit = () => {
           />
         </div>
 
-        {/* Right side - Text lines */}
+        
         <div className="w-full md:w-1/2 text-center md:text-left space-y-4">
-          {/* Line 1 */}
+          
           <h1
             ref={line1Ref}
             className={`text-3xl md:text-5xl font-semibold leading-tight transition duration-500 ${
@@ -82,7 +89,7 @@ const Benefit = () => {
             faster.
           </h1>
 
-          {/* Line 2 */}
+          
           <h1
             ref={line23Ref}
             className={`text-3xl md:text-5xl font-semibold leading-tight transition duration-300 ${
@@ -92,7 +99,7 @@ const Benefit = () => {
             Be more responsive to
           </h1>
 
-          {/* Line 3 */}
+          
           <h1
             className={`text-3xl md:text-5xl font-semibold leading-tight transition duration-300 ${
               activeLine === 23 ? 'text-black' : 'text-gray-500'
@@ -110,7 +117,7 @@ const Benefit = () => {
             most.
           </h1>
 
-          {/* Line 4 */}
+          
           <h1
             ref={line4Ref}
             className={`text-3xl md:text-5xl font-semibold leading-tight transition duration-300 ${
@@ -131,7 +138,6 @@ const Benefit = () => {
         </div>
       </section>
 
-      {/* Follow-up Flow Section */}
       <section className="w-full bg-white py-20 px-6 md:px-16 text-center">
         <motion.h2
           initial={{ opacity: 0, y: 40, scale: 0.95 }}
@@ -174,11 +180,11 @@ const Benefit = () => {
           />
         </motion.div>
       </section>
-      {/* Sales Pipeline Section */}
-{/* Sales Pipeline Section (side-by-side) */}
+      
+
 <section className="w-full py-20 px-6 md:px-16 bg-white">
 <div className="flex flex-col-reverse md:flex-row items-center gap-12 w-full md:w-[90%] ml-auto pr-8 md:pr-20">    
-    {/* Left: Text */}
+    
     <motion.div
       initial={{ opacity: 0, x: -40 }}
       whileInView={{ opacity: 1, x: 0 }}
@@ -196,7 +202,7 @@ const Benefit = () => {
       </p>
     </motion.div>
 
-    {/* Right: Image */}
+    
    <motion.div
   initial={{ opacity: 0, scale: 0.95 }}
   whileInView={{ opacity: 1, scale: 1 }}
@@ -214,10 +220,10 @@ const Benefit = () => {
   </div>
 </section>
 
-{/* Customer Insights Section */}
+
 <section className="w-full py-20 px-6 md:px-16 bg-white">
   <div className="flex flex-col md:flex-row items-center gap-12 w-full md:w-[90%] mr-auto pl-8 md:pl-20">
-    {/* Left: Image */}
+    
     <motion.div
       initial={{ opacity: 0, scale: 0.95 }}
       whileInView={{ opacity: 1, scale: 1 }}
@@ -232,7 +238,7 @@ const Benefit = () => {
       />
     </motion.div>
 
-    {/* Right: Text */}
+    
     <motion.div
       initial={{ opacity: 0, x: 40 }}
       whileInView={{ opacity: 1, x: 0 }}

@@ -61,7 +61,7 @@ const Sidebar = () => {
 
   return (
     <aside className="h-screen w-64 bg-white/10 backdrop-blur-lg border-r border-gray-200 dark:border-gray-700 dark:bg-gray-900/60 text-white sticky top-0 shadow-md flex flex-col">
-      {/* Branding */}
+      {}
       <div onClick={() => navigate('/dashboard')} className="block p-6 text-center border-b border-white/10 cursor-pointer">
         <div className="flex items-center justify-center">
             <ChartPie className="h-8 w-8 text-white" />
@@ -70,7 +70,7 @@ const Sidebar = () => {
         <p className="text-sm text-gray-300 mt-1">Dashboard</p>
       </div>
 
-      {/* Navigation */}
+      {}
       <nav className="flex flex-col gap-2 px-4 py-6">
         {navItems.map((item) => (
           <Link
@@ -88,7 +88,7 @@ const Sidebar = () => {
         ))}
       </nav>
 
-      {/* Pseudo Notifications */}
+      {}
       <div className="px-4 mt-6">
         <h3 className="px-4 mb-2 text-xs font-semibold tracking-wider text-gray-400 uppercase">
           Activity
@@ -118,7 +118,7 @@ const Sidebar = () => {
         </div>
       </div>
 
-      {/* Bottom: Logout */}
+      {}
       <div className="mt-auto px-4 py-6 border-t border-white/10">
         <button className="flex items-center gap-3 text-red-400 hover:text-red-500 transition-all duration-300 w-full px-4 py-2 rounded-md hover:bg-red-500/10">
           <FiLogOut className="text-xl" />

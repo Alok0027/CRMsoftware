@@ -78,7 +78,6 @@ const Deals = () => {
       return;
     }
 
-    // Moving from one list to another
     const startTaskIds = Array.from(start.taskIds);
     startTaskIds.splice(source.index, 1);
     const newStart = {

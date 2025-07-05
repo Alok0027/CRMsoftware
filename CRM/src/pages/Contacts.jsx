@@ -64,7 +64,7 @@ const itemVariants = {
 
 const Contacts = () => {
     const [searchTerm, setSearchTerm] = useState('');
-    const [view, setView] = useState('grid'); // 'grid' or 'list'
+    const [view, setView] = useState('grid'); 
 
     const filteredContacts = useMemo(() =>
         initialContacts.filter(contact =>

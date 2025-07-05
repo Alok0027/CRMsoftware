@@ -17,7 +17,6 @@ const Topbar = () => {
   const { theme, toggleTheme } = useTheme();
   const dropdownRef = useRef(null);
 
-  // Generate and clear notifications
   useEffect(() => {
     const interval = setInterval(() => {
       setNotifications(prev => {
@@ -35,7 +34,6 @@ const Topbar = () => {
     return () => clearInterval(interval);
   }, []);
 
-  // Handle clicks outside dropdown
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -48,7 +46,7 @@ const Topbar = () => {
 
   return (
     <header className={`w-full h-16 px-6 bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 flex items-center justify-between shadow-sm sticky top-0 z-50`}>
-      {/* Left: CRM Title + Hamburger (for mobile) */}
+      {}
       <div className="flex items-center gap-4">
         <button className="md:hidden text-gray-600 dark:text-gray-300 text-2xl">
           <FiMenu />
@@ -56,9 +54,9 @@ const Topbar = () => {
         <h1 className="text-xl font-semibold text-gray-800 dark:text-gray-100">📊 CRM Dashboard</h1>
       </div>
 
-      {/* Right: Search + Actions */}
+      {}
       <div className="flex items-center gap-4">
-        {/* Search bar */}
+        {}
         <div className="hidden md:flex items-center bg-gray-100 dark:bg-gray-700 rounded-md px-3 py-1">
           <FiSearch className="text-gray-500 dark:text-gray-400" />
           <input
@@ -68,12 +66,12 @@ const Topbar = () => {
           />
         </div>
 
-        {/* Theme toggle */}
+        {}
         <button onClick={toggleTheme} className="text-gray-600 dark:text-gray-300 hover:text-orange-500 dark:hover:text-orange-400">
           {theme === 'light' ? <FiMoon className="text-xl" /> : <FiSun className="text-xl" />}
         </button>
 
-        {/* Notifications */}
+        {}
         <div className="relative" ref={dropdownRef}>
           <button 
             onClick={() => setDropdownOpen(!isDropdownOpen)}
@@ -124,7 +122,7 @@ const Topbar = () => {
           </AnimatePresence>
         </div>
 
-        {/* User avatar */}
+        {}
         <div className="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center text-white font-medium">
           A
         </div>

@@ -16,7 +16,7 @@ const Settings = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          {/* Profile Settings */}
+          {}
           <div className="bg-white rounded-lg shadow-sm p-6 border border-gray-200">
             <h2 className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2"><FiUser className="text-orange-500"/> Profile</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -31,7 +31,7 @@ const Settings = () => {
             </div>
           </div>
 
-          {/* Notification Settings */}
+          {}
           <div className="bg-white rounded-lg shadow-sm p-6 border border-gray-200">
             <h2 className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2"><FiBell className="text-orange-500"/> Notifications</h2>
             <div className="space-y-4">
@@ -52,7 +52,7 @@ const Settings = () => {
             </div>
           </div>
 
-          {/* Theme Settings */}
+          {}
           <div className="bg-white rounded-lg shadow-sm p-6 border border-gray-200">
             <h2 className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2"><FiSun className="text-orange-500"/> Theme</h2>
             <div className="flex items-center gap-4">

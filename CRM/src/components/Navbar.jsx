@@ -7,10 +7,10 @@ const Navbar = () => {
     <div className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-7xl h-16 
                     bg-white/70 backdrop-blur-md shadow-lg border border-white/30 
                     rounded-xl px-6 flex items-center justify-between">
-      {/* Left: Logo or Brand */}
+      {}
       <span className="text-xl font-bold text-gray-800">SampleCRM</span>
 
-      {/* Center: Nav Links */}
+      {}
       <div className="hidden md:flex space-x-8 text-gray-700 font-medium">
         <span>Solutions</span>
         <span>Platform</span>
@@ -18,7 +18,7 @@ const Navbar = () => {
         <span>Pricing</span>
       </div>
 
-      {/* Right: Buttons */}
+      {}
       <div className="flex space-x-4">
         <Link to="/login">
   <motion.button

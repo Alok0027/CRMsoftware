@@ -4,7 +4,7 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTimes } from 'react-icons/fa'
 const Footer = () => {
   return (
     <footer className="bg-[#0E0E10] text-gray-300 pt-20 pb-10 px-6">
-      {/* CTA Section */}
+      {}
       <div className="max-w-7xl mx-auto bg-[#1A1A1C] rounded-xl p-10 mb-12 flex flex-col lg:flex-row items-center justify-between gap-6">
         <h2 className="text-2xl lg:text-3xl font-semibold text-center lg:text-left leading-snug">
           Transform your business <br className="hidden md:block" />
@@ -20,9 +20,9 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Links Grid */}
+      {}
       <div className="max-w-7xl mx-auto bg-[#1A1A1C] rounded-xl p-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-10 text-sm">
-        {/* Column 1 */}
+        {}
         <div>
           <h4 className="text-gray-500 text-base font-semibold mb-4">Main Page</h4>
           <ul className="space-y-2 text-base font-semibold">
@@ -33,7 +33,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Column 2 */}
+        {}
         <div>
           <h4 className="text-gray-500 font-semibold mb-4 text-base">Inner Page</h4>
           <ul className="space-y-2 text-base font-semibold">
@@ -44,7 +44,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Column 3 */}
+        {}
         <div>
           <h4 className="text-gray-500 font-semibold mb-4 text-base">Inner Page</h4>
           <ul className="space-y-2 text-base font-semibold">
@@ -54,7 +54,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Column 4 */}
+        {}
         <div>
           <h4 className="text-gray-500 font-semibold mb-4 text-base">Authentication</h4>
           <ul className="space-y-2 text-base font-semibold">
@@ -65,7 +65,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Column 5 */}
+        {}
         <div>
           <h4 className="text-gray-500 font-semibold mb-4 text-base">Utility page</h4>
           <ul className="space-y-2 text-base font-semibold">

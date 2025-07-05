@@ -48,7 +48,7 @@ const Hero = () => {
           perspective: '1000px'
         }}
       >
-        {/* Image 1 */}
+        {}
         <motion.img
           src={crmp1}
           alt="CRM screenshot 1"
@@ -64,7 +64,7 @@ const Hero = () => {
           }}
         />
 
-        {/* Image 2 */}
+        {}
         <motion.img
           src={crmp2}
           alt="CRM screenshot 2"
@@ -80,7 +80,7 @@ const Hero = () => {
           }}
         />
 
-        {/* Image 3 */}
+        {}
         <motion.img
           src={crmp3}
           alt="CRM screenshot 3"

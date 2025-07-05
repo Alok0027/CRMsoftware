@@ -66,7 +66,7 @@ const Dashboard = () => {
             <p className="text-gray-500 mt-1">Here's your business snapshot.</p>
         </div>
       
-      {/* Stat Cards */}
+      {}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
         {stats.map((item, i) => (
           <motion.div 
@@ -82,7 +82,7 @@ const Dashboard = () => {
         ))}
       </div>
 
-      {/* Sales Chart + Deal Source Pie */}
+      {}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
         <div className="lg:col-span-2 bg-white p-6 rounded-xl shadow-sm border border-gray-200">
           <h2 className="text-lg font-semibold text-gray-700 mb-4">Sales Performance</h2>
@@ -112,7 +112,7 @@ const Dashboard = () => {
         </div>
       </div>
 
-      {/* Sales Pipeline */}
+      {}
       <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 mb-8">
         <h2 className="text-lg font-semibold text-gray-700 mb-4">Sales Pipeline</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -125,7 +125,7 @@ const Dashboard = () => {
         </div>
       </div>
 
-      {/* Activity Feed & Tasks */}
+      {}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
         <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
           <h2 className="text-lg font-semibold text-gray-700 mb-4">Recent Activity</h2>
@@ -146,7 +146,7 @@ const Dashboard = () => {
         </div>
       </div>
 
-      {/* Quick Actions */}
+      {}
       <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
         <h2 className="text-lg font-semibold text-gray-700 mb-4">Quick Actions</h2>
         <div className="flex flex-wrap gap-4">
