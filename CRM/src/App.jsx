@@ -10,6 +10,9 @@ import Contacts from './pages/Contacts';
 import Tasks from './pages/Tasks';
 import Reports from './pages/Reports';
 import Settings from './pages/Settings';
+import Pricing from './pages/Pricing';
+import GenericPage from './pages/GenericPage';
+
 
 function App() {
   return (
@@ -17,6 +20,12 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/signup" element={<GenericPage />} />
+          <Route path="/solutions/:page" element={<GenericPage />} />
+          <Route path="/platform/:page" element={<GenericPage />} />
+          <Route path="/support/:page" element={<GenericPage />} />
+
           <Route path="/dashboard" element={<Protectedlayout />}>
             <Route index element={<Dashboard />} />
             <Route path="leads" element={<Leads />} />
